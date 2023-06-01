@@ -7,6 +7,7 @@
     <title>ESEL</title>
     <link rel="stylesheet" href="./Assets/CSS/Style.css">
     <link rel="stylesheet" href="./Assets/CSS/index-responsiveness.css">
+    <script src="./Assets/JS/index.js"></script>
 </head>
 <body>
     <section class="hero_section">
@@ -26,8 +27,30 @@
                         </ul>
                         <button class="nav_btn">Get in touch</button>
                     </div>
-                    <div class="mobile_nav_toogler">
+                    <div class="mobile_nav_toogler" onclick="oepnMobileNav()">
                         <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="mobile_nav hide">
+                <div class="moble_nav_content_wrappe">
+                    <div class="mobile_nav_header">
+                        <h3>ESEL</h3>
+                        <div class="mobile_nav_closer" onclick="closeMobileNav()">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="mobile_nav_list_wrapper">
+                        <ul class="mobile_nav_list">
+                            <li>Services</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Resources</li>
+                            <li>
+                                <button class="nav_btn mobile_nav_btn">Get in touch</button>
+                            </li>
+                        </ul>                        
                     </div>
                 </div>
             </nav>

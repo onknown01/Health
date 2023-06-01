@@ -24,6 +24,10 @@ button, link, input, textarea{
 button{
     cursor: pointer;
 }
+.hide{
+    display: none;
+}
+
 
 
 /* hero + nav*/
@@ -90,6 +94,52 @@ button{
 .mobile_nav_toogler ion-icon{
     width: 2.5rem;
     height: 2.5rem;
+}
+
+/* mobile_nav */
+.mobile_nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.589);
+    backdrop-filter: blur(10px);
+    color: black;
+}
+.mobile_nav_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+.mobile_nav_closer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_nav_closer ion-icon{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.mobile_nav_list_wrapper{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_nav_list{
+    text-align: center;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.mobile_nav_list li{
+    line-height: 2.3;
+}
+.mobile_nav_btn{
+    margin-top: 1.2rem;
 }
 
 
