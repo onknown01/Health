@@ -84,6 +84,13 @@ button{
     background: var(--primary);
     color: white;
 }
+.mobile_nav_toogler{
+    display: none;
+}
+.mobile_nav_toogler ion-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 
 .hero_main_content{
