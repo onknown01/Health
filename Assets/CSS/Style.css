@@ -19,6 +19,12 @@ html{
     font-size: 62.5%;
 }
 
+@media (max-width: 400px) {
+    html{
+        font-size: 50%;
+    }
+}
+
 body{
     font-family: 'Axiforma', sans-serif;
     box-sizing: border-box;
@@ -84,6 +90,22 @@ button{
     border: 2px solid white;
     background-color: #fff;
     color: #4d4d4d;
+}
+.btn-dark{
+    border: 2px solid white;
+    background-color: var(--dark);
+    color: #fff;
+}
+.btn-dark-outline{
+    border: 2px solid var(--dark);
+    background: transparent;
+    color: var(--dark);
+    transition: all .4s;
+}
+.btn-dark-outline:hover{
+    border: 2px solid var(--dark);
+    background-color: var(--black);
+    color: #fff;
 }
 
 /* hero + nav*/
@@ -158,9 +180,9 @@ button{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.589);
+    background: #333333d5;
     backdrop-filter: blur(10px);
-    color: black;
+    color: #fff;
 }
 .mobile_nav_header{
     display: flex;
@@ -168,6 +190,8 @@ button{
     align-items: center;
     font-size: 2.72rem;
     padding: 1.6rem;
+    background-color: var(--primary-deep);
+    color: #fff;
 }
 .mobile_nav_closer{
     display: flex;
@@ -276,7 +300,7 @@ button{
 }
 .service_card_img_wrapper{
     width: 100%;
-    height: 35vh;
+    height: 20rem;
 }
 .service_card_img{
     width: 100%;
