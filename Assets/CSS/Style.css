@@ -44,6 +44,9 @@ button{
 }
 
 /* utilities */
+.contain{
+    padding: 0 6rem;
+}
 .text-primary{
     color: var(--primary);
 }
@@ -128,7 +131,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.4rem 0;
+    padding: 1.7rem 0;
 }
 
 /* nav */
@@ -180,7 +183,7 @@ button{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: #333333d5;
+    background: #414141d5;
     backdrop-filter: blur(10px);
     color: #fff;
 }
@@ -190,7 +193,7 @@ button{
     align-items: center;
     font-size: 2.72rem;
     padding: 1.6rem;
-    background-color: var(--primary-deep);
+    background-color: #000;
     color: #fff;
 }
 .mobile_nav_closer{
@@ -274,6 +277,7 @@ button{
     margin: auto;
 }
 .service_text{
+    margin-bottom: 1rem;
     text-align: center;
 }
 .explore_btn{
@@ -401,7 +405,7 @@ button{
     background: var(--service-bg);
     display: flex;
     justify-content: space-between;
-    gap: 4.8rem;
+    gap: 2rem;
     padding: 8rem 8rem;
 }
 .peoject_action{
@@ -412,7 +416,7 @@ button{
     align-items: flex-start;
 }
 .project_section_header{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary);
 }
 .project_cards_wrapper{
@@ -428,16 +432,17 @@ button{
 .project_card_img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .project_card_content_wrapper{
     display: flex;
     flex-direction: column;
     gap: .48rem;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #fff;
 }
 .project_card_heading{
-    font-size: 2.08rem;
+    font-size: 1.7rem;
     margin-bottom: .8rem;
 }
 .project_card_link{
@@ -447,7 +452,7 @@ button{
 
 /* team_section */
 .team_section{
-    padding: 4.8rem 0;
+    padding: 5rem 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,12 +474,10 @@ button{
 }
 .team_section_header{
     text-align: center;
-    font-size: 2.56rem;
     margin-bottom: .8rem;
 }
 .team_section_text{
     text-align: center;
-    font-size: 1.92rem;
     line-height: 1.7;
     margin-bottom: 1.12rem;
 }
