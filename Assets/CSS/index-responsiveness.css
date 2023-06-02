@@ -24,7 +24,7 @@
         width: 50vw;
     }
     .nav_content_wrapper h3{
-        font-size: 2rem;
+        font-size: 32px;
     }
     .service_text_wrapper{
         width: 80%;
@@ -33,10 +33,10 @@
         width: 85vw;
     }
     .service_card_sub_heading{
-        font-size: 1.2rem;
+        font-size: 19.2px;
     }
     .service_card_text{
-        font-size: 1rem;
+        font-size: 16px;
     }
     .why_us_text{
         width: 80vw;
@@ -60,7 +60,7 @@
     }
     .footer_content_wrapper{
         padding: 0;
-        padding-bottom: 1.5rem;
+        padding-bottom: 24px;
     }
     .news_letter_text{
         width: 85%;
@@ -80,29 +80,29 @@
         text-align: center;
     }
     .hero_main_content{
-        margin-top: 6rem;
+        margin-top: 96px;
     }
     .service_text_wrapper{
         width: 90%;
     }
     .service_cards_wrapper{
         width: 90vw;
-        gap: 1rem;
+        gap: 16px;
     }
     .project_cards_wrapper{
         width: 90vw;
     }
     .review_cards_wrapper{
         width: 90vw;
-        gap: 1rem;
+        gap: 16px;
     }
     .team_img {
-        width: 11rem;
-        height: 7rem;
+        width: 176px;
+        height: 112px;
     }    
     .learge_team_img{
-        width: 12rem;
-        height: 9rem;
+        width: 192px;
+        height: 144px;
     }
     .review_cards_wrapper{
         width: 95vw;
@@ -117,7 +117,7 @@
 
 @media (max-width: 870px) {
     .service_cards_wrapper{
-        gap: 2rem;
+        gap: 32px;
         width: 85vw;
     }
     .service_card:last-child{
@@ -125,14 +125,14 @@
     }
     .project_cards_wrapper{
         width: 85vw;
-        gap: 2rem;
+        gap: 32px;
     }
     .project_card:last-child{
         display: none;
     }
     .review_cards_wrapper{
         flex-direction: column;
-        gap: 2rem;
+        gap: 32px;
         width: 70vw;
         padding-top: 0;
     }
@@ -150,21 +150,21 @@
     }
     .news_letter_form{
         flex-direction: column;
-        gap: 1rem;
+        gap: 16px;
         width: 50%;
     }
     .newsletter_header{
         text-align: center;
     }
     .news_letter_content_wrapper{
-        padding: 3rem;
+        padding: 48px;
     }
 }
 
 @media (max-width: 800px) {
     .footer_content_wrapper{
         flex-direction: column;
-        gap: 1rem;
+        gap: 16px;
     }
     .footer_diff{
         width: 100%;
@@ -188,15 +188,15 @@
 @media (max-width: 680px) {
     .hero_main_content{
         width: 95vw;
-        padding-top: 7rem;
+        padding-top: 112px;
         margin: auto;
     }
     .hero_header{
-        font-size: 3rem;
+        font-size: 112px;
     }
     .hero_text{
         width: 90%;
-        font-size: 1.6rem;
+        font-size: 25.6px;
         line-height: 1.8;
     }
     .service_text_wrapper{
@@ -206,7 +206,7 @@
 
 @media (max-width: 630px) {
     .project_section_header{
-        font-size: 2rem;
+        font-size: 32px;
     }
     .project_cards_wrapper{
         width: 90vw;
@@ -244,11 +244,11 @@
 
 @media (max-width: 520px) {
     .hero_header{
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .help_display{
         text-align: center;
-        padding: 1rem 0;
+        padding: 16px 0;
     }
     .help_display p{
         line-height: 1.8;
@@ -261,13 +261,13 @@
 }
 @media (max-width: 430px) {
     .hero_main_content{
-        padding-top: 2.5rem;
+        padding-top: 40px;
     }
     .hero_header{
-        font-size: 2.2rem;
+        font-size: 40px;
     }
     .hero_text{
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
     }
     .hero_btn_wrapper{
         flex-direction: column;
@@ -283,7 +283,7 @@
 
 @media (max-width: 380px) {
     .navbar{
-        padding: 0.5rem;
+        padding: 8px;
     }
     .nav_content_wrapper{
         justify-content: flex-end;
@@ -303,7 +303,7 @@
     }
     .project_section_header{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 24px;
     }
     .service_cards_wrapper{
         width: 85vw;
@@ -312,16 +312,16 @@
         line-height: 1.5;
     }
     .review_section_header{
-        font-size: 1.5rem;
+        font-size: 24px;
     }
     .review_cards_wrapper{
         width: 85vw;
     }
     .news_letter_content_wrapper{
-        padding: 1rem;
+        padding: 16px;
     }
     .newsletter_header{
-        font-size: 1.7rem;
+        font-size: 27.2px;
     }
     .news_letter_text{
         width: 100%;
@@ -331,7 +331,7 @@
     }
     .copyright{
         width: 90%;
-        font-size: 1rem;
+        font-size: 16px;
         line-height: 1.5;
     }
 }
