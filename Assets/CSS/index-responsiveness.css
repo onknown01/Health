@@ -1,66 +1,6 @@
-@media (max-width: 1200px) {
-    .hero_main_content{
-        width: 50vw;
-    }
-    .nav_action_warapper{
-        width: 55vw;
-    }
-}
-
 @media (max-width: 1070px) {
-    .hero_text{
-        text-align: center;
-    }
-    .nav_action_warapper{
-        display: none;
-    }
-    .nav_content_wrapper{
-        padding-left: 0;
-    }
-    .mobile_nav_toogler{
-        display: block;
-    }
     .hero_main_content{
         width: 50vw;
-    }
-    .nav_content_wrapper h3{
-        font-size: 3.2rem;
-    }
-    .service_text_wrapper{
-        width: 80%;
-    }
-    .service_cards_wrapper{
-        width: 85vw;
-    }
-    .service_card_sub_heading{
-        font-size: 1.92rem;
-    }
-    .service_card_text{
-        font-size: 1.6rem;
-    }
-    .why_us_text{
-        width: 80vw;
-    }
-    .project_section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .peoject_action{
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .project_cards_wrapper{
-        width: 80vw;
-    }
-    .review_cards_wrapper{
-        width: 85vw;
-    }
-    .footer_content_wrapper{
-        padding: 0;
-        padding-bottom: 2.4rem;
     }
     .news_letter_text{
         width: 85%;

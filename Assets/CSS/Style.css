@@ -7,7 +7,6 @@
     --black: #333333;
     --dark: #4d4d4d;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +17,6 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-
 @media (max-width: 400px) {
     html{
         font-size: 50%;
@@ -30,7 +28,7 @@ body{
     box-sizing: border-box;
     line-height: 1.5;
     font-size: 1.6rem;
-    font-weight: 200;
+    font-weight: 300;
     color: #4d4d4d;
 }
 button, link, input, textarea{
@@ -148,6 +146,13 @@ button{
     padding-left: 2.4rem;
     align-items: center;
 }
+@media (max-width: 1070px){
+    .nav_content_wrapper{
+        padding-left: 0;
+    }
+    .nav_content_wrapper h3{
+        font-size: 3.2rem;
+    }}
 .nav_action_warapper{
     display: flex;
     align-items: center;
@@ -155,6 +160,10 @@ button{
     gap: 32px;
     font-size: 1.92rem;
 }
+@media (max-width: 1070px){
+    .nav_action_warapper{
+        display: none;
+    }}
 .nav_list{
     display: flex;
     align-items: center;
@@ -172,6 +181,10 @@ button{
 .mobile_nav_toogler{
     display: none;
 }
+@media (max-width: 1070px){
+    .mobile_nav_toogler{
+        display: block;
+    }}
 .mobile_nav_toogler ion-icon{
     width: 4rem;
     height: 4rem;
@@ -229,29 +242,37 @@ button{
 .hero_main_content{
     width: 40vw;
     margin-left: 7.2rem;
-    margin-top: 4.8rem;
-}
+    margin-top: 4.8rem;}
+@media (max-width: 1200px) {
+    .hero_main_content{
+        width: 50vw;
+    }}
+
 .hero_header{
     font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: .8rem;
-}
+    margin-bottom: .8rem;}
 .hero_text{
     font-size: 1.7rem;
-    margin-bottom: 3.2rem;
-}
+    margin-bottom: 3.2rem;}
+@media (max-width: 1070px){
+    .hero_text{
+        text-align: center;
+    }}
 .hero_btn_wrapper{
     display: flex;
-    gap: 1rem;
-}
+    gap: 1rem;}
+@media (max-width: 1200px) {
+    .nav_action_warapper{
+        width: 55vw;
+    }}
 .demo_btn{
     padding: 1rem 2rem;
     border-radius: 3.2rem;
     border: 2px solid white;
     background: transparent;
-    color: white;
-}
+    color: white;}
 
 
 /* service */
@@ -274,8 +295,11 @@ button{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: auto;
-}
+    margin: auto;}
+@media (max-width: 1070px){
+    .service_text_wrapper{
+        width: 80%;
+    }}
 .service_text{
     margin-bottom: 1rem;
     text-align: center;
@@ -297,6 +321,10 @@ button{
     padding: 4.8rem 0;
     margin: auto;
 }
+@media (max-width: 1070px){
+    .service_cards_wrapper{
+        width: 85vw;
+    }}
 .service_card{
     width: 100%;
     box-shadow: 0 0 1rem #00000018;
@@ -332,11 +360,17 @@ button{
     color: #292828;
     font-size: 1.4rem;
     margin-bottom: 2rem;
-    font-weight: 300;
-}
+    font-weight: 300;}
+@media (max-width: 1070px){
+    .service_card_sub_heading{
+        font-size: 1.92rem;
+    }}
 .service_card_text{
-    margin-bottom: .8rem;
-}
+    margin-bottom: .8rem;}
+@media (max-width: 1070px){
+    .service_card_text{
+        font-size: 1.6rem;
+    }}
 .green_btn{
     background: var(--primary);
 }
@@ -390,6 +424,10 @@ button{
     font-weight: 200;
     width: 65%;
 }
+@media (max-width: 1070px){
+    .why_us_text{
+        width: 80vw;
+    }}
 .why_us_btn{
     padding: .64rem 1.6rem;
     background: white;
@@ -408,6 +446,12 @@ button{
     gap: 2rem;
     padding: 8rem 8rem;
 }
+@media (max-width: 1070px){
+    .project_section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }}
 .peoject_action{
     width: 20vw;
     display: flex;
@@ -415,6 +459,13 @@ button{
     gap: 1.6rem;
     align-items: flex-start;
 }
+@media (max-width: 1070px){
+    .peoject_action{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }}
 .project_section_header{
     font-size: 2.5rem;
     color: var(--primary);
@@ -425,6 +476,10 @@ button{
     gap: 1.6rem;
     width: 70vw;
 }
+@media (max-width: 1070px){
+    .project_cards_wrapper{
+        width: 80vw;
+    }}
 .project_card_img_wrapper{
     width: 100%;
     height: 35vh;
@@ -519,6 +574,10 @@ button{
     gap: 3.2rem;
     padding: 4.8rem 0;
 }
+@media (max-width: 1070px){
+    .review_cards_wrapper{
+        width: 85vw;
+    }}
 .review_card{
     display: flex;
     flex-direction: column;
@@ -608,7 +667,6 @@ button{
     padding-top: 6.4rem;
     background: var(--primary-deep);
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -623,6 +681,10 @@ button{
     border-bottom: 1px solid white;
     padding-bottom: 3.2rem;
 }
+@media (max-width: 1070px){
+    .footer_content_wrapper{
+        padding: 0;
+        padding-bottom: 2.4rem;}}
 .footer_diff{
     width: 20vw;
     display: flex;
