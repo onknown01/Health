@@ -23,6 +23,7 @@ html{
 
 body{
     font-family: 'Axiforma', sans-serif;
+    overflow-x: hidden;
     box-sizing: border-box;
     line-height: 1.5;
     font-size: 1.6rem;
@@ -321,9 +322,9 @@ button{
 
 /* service */
 .services_section{
-    padding: 6.4rem;
     background: var(--service-bg);
     display: flex;
+    padding: 5rem 0;
     justify-content: center;
     align-items: center;}
 .services_section_header{
@@ -359,7 +360,6 @@ button{
     display: flex;
     justify-content: space-around;
     gap: 2rem;
-    width: 75vw;
     padding: 4.8rem 0 2rem;
     margin: auto;}
 @media (max-width: 1070px){
@@ -488,7 +488,7 @@ button{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    padding: 8rem 8rem;}
+    padding: 8rem 0;}
 @media (max-width: 1070px){
     .project_section{
         flex-direction: column;
@@ -496,24 +496,13 @@ button{
         align-items: center;}}
 
 .peoject_action{
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    align-items: flex-start;}
-@media (max-width: 1070px){
-    .peoject_action{
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;}}
-
+    margin-bottom: 3rem;
+    text-align: center;}
+.project_btnWrap{
+    text-align: center;}
 .project_section_header{
     font-size: 2.5rem;
     color: var(--primary);}
-@media (max-width: 630px){
-    .project_section_header{
-        font-size: 3.2rem;}}
 @media (max-width: 380px){
     .project_section_header{
         text-align: center;
@@ -522,8 +511,7 @@ button{
 .project_cards_wrapper{
     display: flex;
     justify-content: space-around;
-    gap: 1.6rem;
-    width: 70vw;}
+    gap: 1.6rem;}
 @media (max-width: 1070px){
     .project_cards_wrapper{
         width: 80vw;}}
