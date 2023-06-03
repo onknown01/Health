@@ -5,6 +5,7 @@
     --primary-deep: #4B7C04;
     --service-bg: #F0F7E6;
     --service-tomato-bg: #E89982;
+    --pink2: #d18a75;
     --black: #333333;
     --dark: #4d4d4d;}
 
@@ -50,6 +51,8 @@ button{
     border-radius: 3.2rem;
     outline: none;
     border: none;}
+.btn-square{
+    border-radius: unset;}
 .btn-primary{
     background-color: var(--primary);
     color: #fff;
@@ -78,9 +81,12 @@ button{
     background-color: #fff;
     color: #4d4d4d;}
 .btn-dark{
-    border: 2px solid white;
+    border: 2px solid var(--dark);
     background-color: var(--dark);
-    color: #fff;}
+    color: #fff;
+    transition: all .5s;}
+.btn-dark:hover{
+    background-color: var(--black);}
 .btn-dark-outline{
     border: 2px solid var(--dark);
     background: transparent;
@@ -89,6 +95,38 @@ button{
 .btn-dark-outline:hover{
     border: 2px solid var(--dark);
     background-color: var(--black);
+    color: #fff;}
+.btn-black{
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    color: #fff;
+    transition: all .5s;}
+.btn-black:hover{
+    background-color: var(--black);}
+.btn-black-outline{
+    border: 2px solid var(--black);
+    background: transparent;
+    color: var(--black);
+    transition: all .4s;}
+.btn-black-outline:hover{
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    color: #fff;}
+.btn-pink{
+    border: 2px solid var(--service-tomato-bg);
+    background-color: var(--service-tomato-bg);
+    color: #fff;
+    transition: all .5s;}
+.btn-pink:hover{
+    background-color: var(--pink2);}
+.btn-pink-outline{
+    border: 2px solid var(--service-tomato-bg);
+    background: transparent;
+    color: var(--service-tomato-bg);
+    transition: all .4s;}
+.btn-pink-outline:hover{
+    border: 2px solid var(--service-tomato-bg);
+    background-color: var(--pink2);
     color: #fff;}
 
 /* hero + nav*/
@@ -141,7 +179,7 @@ button{
     .nav_content_wrapper{
         padding-left: 0;}
     .nav_content_wrapper h3{
-        font-size: 3.2rem;}}
+        font-size: 2rem;}}
 @media (max-width: 380px){
     .nav_content_wrapper{
         justify-content: flex-end;
@@ -152,9 +190,9 @@ button{
 .nav_action_warapper{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 50vw;
-    gap: 32px;
-    font-size: 1.92rem;}
+    gap: 32px;}
 @media (max-width: 1070px){
     .nav_action_warapper{
         display: none;}}
@@ -165,12 +203,6 @@ button{
     justify-content: space-between;
     gap: 3.2rem;
     list-style: none;}
-.nav_btn{
-    padding: 1rem 2rem;
-    border-radius: 3.2rem;
-    border: none;
-    background: var(--primary);
-    color: white;}
 
 .mobile_nav_toogler{
     display: none;}
@@ -258,15 +290,9 @@ button{
 @media (max-width: 980px){
     .hero_header{
         text-align: center;}}
-@media (max-width: 680px){
-    .hero_header{
-        font-size: 11.2rem;}}
 @media (max-width: 520px){
     .hero_header{
-        font-size: 4rem;}}
-@media (max-width: 430px){
-    .hero_header{
-        font-size: 4rem;}}
+        font-size: 3rem;}}
 
 .hero_text{
     font-size: 1.7rem;
@@ -292,14 +318,6 @@ button{
 @media (max-width: 430px){
     .hero_btn_wrapper{
         flex-direction: column;}}
-
-.demo_btn{
-    padding: 1rem 2rem;
-    border-radius: 3.2rem;
-    border: 2px solid white;
-    background: transparent;
-    color: white;}
-
 
 /* service */
 .services_section{
@@ -336,20 +354,13 @@ button{
 .service_text{
     margin-bottom: 1rem;
     text-align: center;}
-.explore_btn{
-    padding: 0.96rem 3.2rem;
-    border-radius: 3.2rem;
-    border: .2rem solid var(--primary);
-    font-size: 1.76rem;
-    background: transparent;
-    color: var(--primary);}
 
 .service_cards_wrapper{
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     width: 75vw;
-    padding: 4.8rem 0;
+    padding: 4.8rem 0 2rem;
     margin: auto;}
 @media (max-width: 1070px){
     .service_cards_wrapper{
@@ -360,7 +371,7 @@ button{
         gap: 16px;}}
 @media (max-width: 870px){
     .service_cards_wrapper{
-        gap: 3.2rem;
+        gap: 1.5rem;
         width: 85vw;}}
 @media (max-width: 600px){
     .service_cards_wrapper{
@@ -375,7 +386,9 @@ button{
 
 .service_card{
     width: 100%;
-    box-shadow: 0 0 1rem #00000018;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem .5rem #00000018;
     background: white;}
 @media (max-width: 870px){
     .service_card:last-child{
@@ -400,23 +413,15 @@ button{
     justify-content: space-between;
     flex-direction: column;
     gap: .48rem;}
-.service_card_btn{
-    padding: .96rem 0;
-    border-radius: 3.2rem;
-    border: none;
-    color: white;}
 .service_card_header{
     font-size: 2rem;
     line-height: 1.5;}
-
 .service_card_sub_heading{
     color: #292828;
     font-size: 1.4rem;
+    margin-top: .4rem;
     margin-bottom: 2rem;
     font-weight: 300;}
-@media (max-width: 1070px){
-    .service_card_sub_heading{
-        font-size: 1.92rem;}}
 
 .service_card_text{
     margin-bottom: .8rem;}
@@ -424,20 +429,13 @@ button{
     .service_card_text{
         font-size: 1.6rem;}}
 
-.green_btn{
-    background: var(--primary);}
-.black_btn{
-    background: black;}
-.tomato_btn{
-    background: var(--service-tomato-bg);}
 .service_bottom_area{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin: 1rem 0;
-    font-size: 1.92rem;}
+    margin: 1rem 0;}
 .service_bottom_area a{
     color: var(--primary);}
 @media (max-width: 380px){
@@ -482,14 +480,6 @@ button{
 @media (max-width: 600px){
     .why_us_text{
         width: 90vw;}}
-
-.why_us_btn{
-    padding: .64rem 1.6rem;
-    background: white;
-    color: var(--primary);
-    outline: none;
-    border: none;
-    border-radius: .32rem;}
 
 
 /* project section */
@@ -558,6 +548,12 @@ button{
 @media (max-width: 430px){
     .project_cards_wrapper{
         width: 80vw;}}
+
+.project_card{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 1.5rem 0.5rem #27272721;
+}
 
 .project_card_img_wrapper{
     width: 100%;
@@ -747,7 +743,7 @@ button{
     color: white;}
 @media (max-width: 840px){
     .news_letter_content_wrapper{
-        padding: 4.8rem;}}
+        padding: 3rem 2rem;}}
 .news_letter_form{
     display: flex;
     grid-column-gap: .8rem;}
@@ -755,7 +751,7 @@ button{
     .news_letter_form{
         flex-direction: column;
         gap: 1.6rem;
-        width: 50%;}}
+        width: 90%;}}
 @media (max-width: 380px){
     .news_letter_form{
         width: 98%;}}
@@ -772,6 +768,7 @@ button{
 .news_letter_text{
     width: 70%;
     text-align: center;
+    font-size: small;
     margin-bottom: 1.6rem;}
 @media (max-width: 980px){
     .news_letter_text{
@@ -781,8 +778,7 @@ button{
         width: 100%;}}
 
 .news_letter_input{
-    padding: 1.12rem .8rem;
-    font-size: 1.76rem;
+    padding: 1.4rem 1.5rem;
     border: .1rem solid white;
     outline: none;
     border-radius: .32rem;
@@ -803,7 +799,7 @@ button{
 /* footer */
 .footer{
     padding-top: 6.4rem;
-    background: var(--primary-deep);
+    background: #1a1a1a;
     color: white;
     display: flex;
     flex-direction: column;
