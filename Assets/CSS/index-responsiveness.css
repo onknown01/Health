@@ -211,6 +211,15 @@
     .project_cards_wrapper{
         width: 90vw;
     }
+    .news_letter_content_wrapper{
+        padding: 1.5rem;
+    }
+    .newsletter_header{
+        font-size: 2rem;
+    }
+    .news_letter_form{
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -318,7 +327,7 @@
         width: 85vw;
     }
     .news_letter_content_wrapper{
-        padding: 1rem;
+        padding: 2.5rem 1rem;
     }
     .newsletter_header{
         font-size: 1.7rem;
