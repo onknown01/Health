@@ -36,6 +36,10 @@ button{
     cursor: pointer;}
 .hide{
     display: none;}
+.link{
+    color: inherit;
+    text-decoration: none;
+}
 
 /* utilities */
 .contain{
@@ -173,6 +177,7 @@ button{
 .nav_content_wrapper{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 92vw;
     padding-left: 2.4rem;
     align-items: center;}
@@ -569,8 +574,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;}
-
 .news_letter_content_wrapper{
+    align-items: center;}
+.team_section_content_wrapper{
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -721,7 +727,7 @@ button{
     background-repeat: no-repeat;
     background-position: top;
     width: 85vw;
-    padding: 6.4rem 8rem;
+    padding: 6rem 5rem;
     height: auto;
     border-radius: 1.6rem;
     display: flex;
