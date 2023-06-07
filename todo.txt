@@ -1,0 +1,2 @@
+- inspect resonsiveness for about and hompe page and make neccessary corrections
+- add more stuffs that needs corrections
