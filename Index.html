@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESEL</title>
-    <link rel="stylesheet" href="./Assets/CSS/Style.css" />
-    <script src="./Assets/JS/index.js"></script>
+    <title>ESEL | HTML</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/index.js"></script>
   </head>
   <body>
     <section class="hero_section">
@@ -20,7 +20,9 @@
             <div class="nav_action_warapper">
               <ul class="nav_list">
                 <li>Services</li>
-                <li>About Us</li>
+                <li>
+                  <a href="about.html" class="link">About Us</a>
+                </li>
                 <li>Contact Us</li>
                 <li>Resources</li>
               </ul>
@@ -55,11 +57,7 @@
         </nav>
 
         <div class="hero_main_content">
-          <h2 class="hero_header">
-            Enviromental <br />
-            Health Services <br />
-            Experts
-          </h2>
+          <h2 class="hero_header">Enviromental Health Services Experts</h2>
           <p class="hero_text">
             Your Reliable Partner for Enviromental Health Solutions
           </p>
@@ -72,97 +70,103 @@
     </section>
 
     <section class="services_section">
-      <div class="service_content_wrapper">
-        <h2 class="services_section_header text-primary">
-          We offer the Best Services
-        </h2>
-        <div class="service_text_wrapper">
-          <p class="service_text">
-            We are a team of dedicated, fully qualified Environmental Health
-            Officers specializing in Food Safety, Housing, and Health & Safety.
-            With a combined experience of over 50 years, our mission is to
-            foster safer, healthier communities by providing top-notch
-            consulting services and implementing effective environmental health
-            strategies.
-          </p>
-          <button class="btn btn-primary-outline">Explore our Services</button>
-        </div>
+      <div class="contain">
+        <div class="service_content_wrapper">
+          <h2 class="services_section_header text-primary">
+            We offer the Best Services
+          </h2>
+          <div class="service_text_wrapper">
+            <p class="service_text">
+              We are a team of dedicated, fully qualified Environmental Health
+              Officers specializing in Food Safety, Housing, and Health &
+              Safety. With a combined experience of over 50 years, our mission
+              is to foster safer, healthier communities by providing top-notch
+              consulting services and implementing effective environmental
+              health strategies.
+            </p>
+            <button class="btn btn-primary-outline">
+              Explore our Services
+            </button>
+          </div>
 
-        <div class="service_cards_wrapper">
-          <div class="service_card">
-            <div class="service_card_img_wrapper">
-              <img
-                src="./Assets/Images/food-case-study.png"
-                alt=""
-                class="service_card_img"
-              />
-            </div>
-            <div class="service_card_content_wrapper">
-              <div>
-                <h3 class="service_card_header text-primary">Food Safety</h3>
-                <h3 class="service_card_sub_heading">
-                  Protecting Your Business, Safeguarding Public Health
-                </h3>
-                <div class="service_card_text">
-                  In the field of food safety, we offer a comprehensive suite of
-                  services, ensuring your business complies with the latest
-                  regulations and best practices
-                </div>
+          <div class="service_cards_wrapper">
+            <div class="service_card">
+              <div class="service_card_img_wrapper">
+                <img
+                  src="./assets/Images/food-case-study.png"
+                  alt=""
+                  class="service_card_img"
+                />
               </div>
-              <button class="btn btn-primary">Learn More</button>
+              <div class="service_card_content_wrapper">
+                <div>
+                  <h3 class="service_card_header text-primary">Food Safety</h3>
+                  <h3 class="service_card_sub_heading">
+                    Protecting Your Business, Safeguarding Public Health
+                  </h3>
+                  <div class="service_card_text">
+                    In the field of food safety, we offer a comprehensive suite
+                    of services, ensuring your business complies with the latest
+                    regulations and best practices
+                  </div>
+                </div>
+                <button class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+            <div class="service_card">
+              <div class="service_card_img_wrapper">
+                <img
+                  src="./assets/Images/health and safety banner.png"
+                  alt=""
+                  class="service_card_img"
+                />
+              </div>
+              <div class="service_card_content_wrapper">
+                <div>
+                  <h3 class="service_card_header">Health & Safety</h3>
+                  <h3 class="service_card_sub_heading">
+                    Ensuring Safety in Every Aspect of Your Operations
+                  </h3>
+                  <div class="service_card_text">
+                    In the sphere of health and safety, our role is to safeguard
+                    your employees and the public by ensuring your operations
+                    comply with health and safety regulations
+                  </div>
+                </div>
+                <button class="btn btn-dark">Learn More</button>
+              </div>
+            </div>
+            <div class="service_card">
+              <div class="service_card_img_wrapper">
+                <img
+                  src="./assets/Images/housing banner.png"
+                  alt=""
+                  class="service_card_img"
+                />
+              </div>
+              <div class="service_card_content_wrapper">
+                <div>
+                  <h3 class="service_card_header text-pink">
+                    Housing services
+                  </h3>
+                  <h3 class="service_card_sub_heading">
+                    Creating Healthier Living Environments
+                  </h3>
+                  <div class="service_card_text">
+                    Our team is dedicated to ensuring safe, healthy living
+                    conditions in all housing environments, including Houses in
+                    Multiple Occupation (HMOs).
+                  </div>
+                </div>
+                <button class="btn btn-pink">Learn More</button>
+              </div>
             </div>
           </div>
-          <div class="service_card">
-            <div class="service_card_img_wrapper">
-              <img
-                src="./Assets/Images/health and safety banner.png"
-                alt=""
-                class="service_card_img"
-              />
-            </div>
-            <div class="service_card_content_wrapper">
-              <div>
-                <h3 class="service_card_header">Health & Safety</h3>
-                <h3 class="service_card_sub_heading">
-                  Ensuring Safety in Every Aspect of Your Operations
-                </h3>
-                <div class="service_card_text">
-                  In the sphere of health and safety, our role is to safeguard
-                  your employees and the public by ensuring your operations
-                  comply with health and safety regulations
-                </div>
-              </div>
-              <button class="btn btn-dark">Learn More</button>
-            </div>
-          </div>
-          <div class="service_card">
-            <div class="service_card_img_wrapper">
-              <img
-                src="./Assets/Images/housing banner.png"
-                alt=""
-                class="service_card_img"
-              />
-            </div>
-            <div class="service_card_content_wrapper">
-              <div>
-                <h3 class="service_card_header text-pink">Housing services</h3>
-                <h3 class="service_card_sub_heading">
-                  Creating Healthier Living Environments
-                </h3>
-                <div class="service_card_text">
-                  Our team is dedicated to ensuring safe, healthy living
-                  conditions in all housing environments, including Houses in
-                  Multiple Occupation (HMOs).
-                </div>
-              </div>
-              <button class="btn btn-pink">Learn More</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="service_bottom_area">
-          <p>Looking for Environmental Health&Safety Experts?</p>
-          <a href="#" class="service_link">We are HERE</a>
+          <div class="service_bottom_area">
+            <p>Looking for Environmental Health&Safety Experts?</p>
+            <a href="#" class="service_link">We are HERE</a>
+          </div>
         </div>
       </div>
     </section>
@@ -182,63 +186,64 @@
     </div>
 
     <section class="project_section">
-      <div class="peoject_action">
-        <h2 class="project_section_header">Some project from us</h2>
-        <button class="btn btn-primary-outline">View Here</button>
-      </div>
-      <div class="project_cards_wrapper">
-        <div class="project_card">
-          <div class="project_card_img_wrapper">
-            <img
-              src="./Assets/Images/housing-case-study.png"
-              alt=""
-              class="project_card_img"
-            />
-          </div>
-          <div class="project_card_content_wrapper">
-            <h2 class="project_card_heading">Housing Service</h2>
-            <p class="project_card_text">
-              In the sphere of health and safety, our role is to safeguard your
-              employees and the public by ensuring your operations comply with
-              health and safety regulations. We offer:
-            </p>
-            <a href="#" class="project_card_link">Learn More</a>
-          </div>
+      <div class="contain">
+        <div class="peoject_action">
+          <h2 class="project_section_header">Some project from us</h2>
         </div>
-        <div class="project_card">
-          <div class="project_card_img_wrapper">
-            <img
-              src="./Assets/Images/housing-case-study.png"
-              alt=""
-              class="project_card_img"
-            />
+        <div class="project_cards_wrapper">
+          <div class="project_card">
+            <div class="project_card_img_wrapper">
+              <img
+                src="./assets/Images/housing-case-study.png"
+                alt=""
+                class="project_card_img"
+              />
+            </div>
+            <div class="project_card_content_wrapper">
+              <h2 class="project_card_heading">Housing Service</h2>
+              <p class="project_card_text">
+                In the sphere of health and safety, our role is to safeguard
+                your employees and the public by ensuring your operations comply
+                with health and safety regulations. We offer:
+              </p>
+              <a href="#" class="project_card_link">Learn More</a>
+            </div>
           </div>
-          <div class="project_card_content_wrapper">
-            <h2 class="project_card_heading">Health and Safety</h2>
-            <p class="project_card_text">
-              In the sphere of health and safety, our role is to safeguard your
-              employees and the public by ensuring your operations comply with
-              health and safety regulations. We offer:
-            </p>
-            <a href="#" class="project_card_link">Learn More</a>
+          <div class="project_card">
+            <div class="project_card_img_wrapper">
+              <img
+                src="./assets/Images/housing-case-study.png"
+                alt=""
+                class="project_card_img"
+              />
+            </div>
+            <div class="project_card_content_wrapper">
+              <h2 class="project_card_heading">Health and Safety</h2>
+              <p class="project_card_text">
+                In the sphere of health and safety, our role is to safeguard
+                your employees and the public by ensuring your operations comply
+                with health and safety regulations. We offer:
+              </p>
+              <a href="#" class="project_card_link">Learn More</a>
+            </div>
           </div>
-        </div>
-        <div class="project_card">
-          <div class="project_card_img_wrapper">
-            <img
-              src="./Assets/Images/housing-case-study.png"
-              alt=""
-              class="project_card_img"
-            />
-          </div>
-          <div class="project_card_content_wrapper">
-            <h2 class="project_card_heading">Food Service</h2>
-            <p class="project_card_text">
-              In the sphere of health and safety, our role is to safeguard your
-              employees and the public by ensuring your operations comply with
-              health and safety regulations. We offer:
-            </p>
-            <a href="#" class="project_card_link">Learn More</a>
+          <div class="project_card">
+            <div class="project_card_img_wrapper">
+              <img
+                src="./assets/Images/housing-case-study.png"
+                alt=""
+                class="project_card_img"
+              />
+            </div>
+            <div class="project_card_content_wrapper">
+              <h2 class="project_card_heading">Food Service</h2>
+              <p class="project_card_text">
+                In the sphere of health and safety, our role is to safeguard
+                your employees and the public by ensuring your operations comply
+                with health and safety regulations. We offer:
+              </p>
+              <a href="#" class="project_card_link">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -255,15 +260,15 @@
           <button class="btn btn-primary">Meet our Team</button>
         </div>
         <div class="team_members_image_wrapper">
-          <img src="./Assets/Images/team/3.png" alt="" class="team_img" />
-          <img src="./Assets/Images/team/3.png" alt="" class="team_img" />
+          <img src="./assets/Images/team/3.png" alt="" class="team_img" />
+          <img src="./assets/Images/team/3.png" alt="" class="team_img" />
           <img
-            src="./Assets/Images/team/4.png"
+            src="./assets/Images/team/4.png"
             alt=""
             class="team_img learge_team_img"
           />
-          <img src="./Assets/Images/team/6.png" alt="" class="team_img" />
-          <img src="./Assets/Images/team/6.png" alt="" class="team_img" />
+          <img src="./assets/Images/team/6.png" alt="" class="team_img" />
+          <img src="./assets/Images/team/6.png" alt="" class="team_img" />
         </div>
       </div>
     </section>
@@ -273,7 +278,7 @@
       <div class="review_cards_wrapper">
         <div class="review_card">
           <img
-            src="./Assets/Images/testimonial-icon.png"
+            src="./assets/Images/testimonial-icon.png"
             alt=""
             class="review_card_icon"
           />
@@ -283,7 +288,7 @@
           </p>
           <div class="review_user_img_wrapper">
             <img
-              src="./Assets/Images/why choose us banner.png"
+              src="./assets/Images/why choose us banner.png"
               alt=""
               class="review_user_img"
             />
@@ -291,7 +296,7 @@
         </div>
         <div class="review_card brand_review_card">
           <img
-            src="./Assets/Images/testimonial-icon.png"
+            src="./assets/Images/testimonial-icon.png"
             alt=""
             class="review_card_icon"
           />
@@ -301,7 +306,7 @@
           </p>
           <div class="review_user_img_wrapper">
             <img
-              src="./Assets/Images/why choose us banner.png"
+              src="./assets/Images/why choose us banner.png"
               alt=""
               class="review_user_img"
             />
@@ -309,7 +314,7 @@
         </div>
         <div class="review_card">
           <img
-            src="./Assets/Images/testimonial-icon.png"
+            src="./assets/Images/testimonial-icon.png"
             alt=""
             class="review_card_icon"
           />
@@ -319,7 +324,7 @@
           </p>
           <div class="review_user_img_wrapper">
             <img
-              src="./Assets/Images/why choose us banner.png"
+              src="./assets/Images/why choose us banner.png"
               alt=""
               class="review_user_img"
             />
