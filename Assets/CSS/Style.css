@@ -16,6 +16,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
     font-size: 62.5%;}
 @media (max-width: 400px) {
     html{
@@ -232,6 +233,7 @@ button{
     width: 100vw;
     height: 100vh;
     background: #414141d5;
+    z-index: 50;
     backdrop-filter: blur(10px);
     color: #fff;}
 .mobile_nav_header{
@@ -562,7 +564,7 @@ button{
 
 /* team_section */
 .team_section{
-    padding: 5rem 1rem 0;
+    padding: 5rem 0 0;
     display: flex;
     justify-content: center;
     align-items: center;}
@@ -868,8 +870,7 @@ button{
     background-image: url(../Images/about\ hero.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    margin-bottom: 3.2rem;}
+    background-position: top;}
 .about_hero_main_content{
     width: 100%;
     display: flex;
@@ -949,11 +950,11 @@ button{
     border-radius: 3.2rem;}
 .intro_text_contnet_div{
     flex: 1;
-    padding: 2.4rem 0;}
+    padding: 0 0 2.4rem;}
 
 .intro_header{
     font-size: 2.4rem;
-    margin-bottom: 9.6rem;
+    margin-bottom: .96rem;
     color: var(--primary);}
 @media (max-width: 450px){
     .intro_header{
@@ -971,8 +972,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 11.2rem 0;
-    padding-bottom: 12.8rem;
+    padding: 8rem 0;
     background: #F0F7E6;}
 
 .mission_content_wrapper{
@@ -1010,7 +1010,7 @@ button{
     text-align: center;}
 .mission_header{
     font-size: 2.24rem;
-    margin-bottom: 8rem;
+    margin-bottom: .8rem;
     color: var(--primary);}
 
 .mission_text{
@@ -1153,8 +1153,8 @@ button{
     width: 75vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 3.2rem;
-    margin: 9.6rem 0;}
+    gap: 2rem;
+    margin: 5rem 0;}
 @media (max-width: 780px){
     .about_team_member_card_wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -1215,8 +1215,7 @@ button{
 
 .accredition_header{
     font-size: 3.2rem;
-    color: var(--primary);
-    margin-bottom: 2.8rem;}
+    color: var(--primary);}
 @media (max-width: 450px){
     .accredition_header{
         font-size: 2.6rem;}}
