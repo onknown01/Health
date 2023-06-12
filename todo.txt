@@ -1,4 +1,13 @@
-- rename classes and make sure everything still works elegantly
-- chekout toggle if it still works
-- make home, about and services elegant perfect and elegant
-- handle contact us later
+- work on resources responsiveness and look
+- adjust hero section (home page) on different viewports
+- adjust hero section (other pages) on different viewports
+- make hero caption responsive (home and other pages)
+- work on text hirachy and white spacing (home, about and resurces)
+- cross check for extra refactoring and fix potiential bugs
+- push changes
+- rename classes (home, about & resources)
+- delete unused classes
+- check if toggles still works
+- clean up code
+- push
+- work on contact us page
