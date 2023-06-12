@@ -147,13 +147,17 @@ button{
 
 /* hero + nav*/
 .hero_section{
-    width: 100%;
-    height: 105vh;
+    height: 100vh;
     background-image: url(../Images/hero\ banner.png);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;}
+@media (max-width: 750px){
+    .hero_section{
+        height: 80vh;
+    }
+}
 .hero_content_wrapper{
     width: 100%;
     height: 100%;
@@ -271,17 +275,12 @@ button{
         width: 50vw;}}
 @media (max-width: 980px){
     .hero_main_content{
-        width: 85vw;
-        display: flex;
-        margin-top: 9.6rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 85%;
+        text-align: center;
         padding: 0;}}
 @media (max-width: 680px){
     .hero_main_content{
-        width: 95vw;
-        padding-top: 11.2rem;
+        width: 95%;
         margin: auto;}}
 @media (max-width: 430px){
     .hero_main_content{
@@ -291,12 +290,13 @@ button{
         padding-top: 0;}}
 
 .hero_header{
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: .8rem;}
 .hero_text{
-    font-size: 1.3rem;}
+    margin: 0 0 1rem;
+    font-size: 2rem;}
 
 .hero_btn_wrapper{
     display: flex;
@@ -304,6 +304,9 @@ button{
 @media (max-width: 1200px) {
     .nav_action_warapper{
         width: 55vw;}}
+@media (max-width: 980px) {
+    .hero_btn_wrapper{
+        justify-content: center;}}
 @media (max-width: 430px){
     .hero_btn_wrapper{
         flex-direction: column;}}
@@ -317,8 +320,13 @@ button{
     align-items: center;}
 .services_section_header{
     text-align: center;
-    font-size: 2.72rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;}
+@media (max-width: 750px){
+    .services_section_header{
+        font-size: 2rem;
+    }
+}
 .service_text_wrapper{
     width: 70%;
     display: flex;
@@ -437,9 +445,10 @@ button{
         text-align: center;}}
 
 .why_us_header{
-    font-size: 3.2rem;}
+    font-size: 2.5rem;}
 .why_us_text{
     text-align: center;
+    font-size: 1.4rem;
     padding: 2rem 0;
     margin: 0 auto;
     width: 65%;}
@@ -514,6 +523,7 @@ button{
         width: 80%;}}
 
 .team_section_header{
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: .8rem;}
 .team_section_text{
@@ -559,7 +569,7 @@ button{
     background: var(--service-bg);}
 .review_section_header{
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin-bottom: 3.2rem;}
 @media (max-width: 380px){
     .review_section_header{
@@ -657,7 +667,7 @@ button{
         width: 98%;}}
 
 .newsletter_header{
-    font-size: 2.3rem;}
+    font-size: 2.5rem;}
 @media (max-width: 840px){
     .newsletter_header{
         text-align: center;}}
@@ -774,14 +784,17 @@ button{
 /* [ABOUT PAGE] */
 .about_hero_section{
     width: 100%;
-    height: 60vh;
+    height: 57vh;
     background-image: url(../Images/about\ hero.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;}
-@media (max-width: 585px){
+@media (max-width: 750px){
     .about_hero_section{
-        height: 40vh;}}
+        height: 45vh;}}
+/* @media (max-width: 450px){
+    .about_hero_section{
+        height: 40vh;}} */
 
 .about_hero_main_content{
     width: 100%;
@@ -789,6 +802,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateY(50%);
     padding: 3rem 0;}
 
 /* intro_section */
@@ -801,7 +815,7 @@ button{
     margin: 0 auto 0;
     display: flex;
     gap: 2rem;
-    width: 70%;}
+    width: 80%;}
 @media (max-width: 985px){
     .intro_content_wrappper{
         width: 85%;}}
@@ -835,6 +849,9 @@ button{
     font-size: 2.4rem;
     margin-bottom: .96rem;
     color: var(--primary);}
+/* @media (max-width: 985px){
+    .intro_header{
+        text-align: center;}} */
 @media (max-width: 450px){
     .intro_header{
         font-size: 1.76rem;}}
@@ -889,7 +906,7 @@ button{
     padding: 4rem 0;}
 .about_team_header{
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin-bottom: 1.6rem;
     color: var(--primary);}
 @media (max-width: 450px){
@@ -999,7 +1016,7 @@ button{
     padding: 3rem 0;
     text-align: center;}
 .accredition_header{
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     color: var(--primary);}
 @media (max-width: 450px){
     .accredition_header{
@@ -1064,6 +1081,10 @@ button{
     justify-content: center;
     flex-direction: column;
     align-items: center;}
+.service_content_wrapper{
+    display: flex;
+    gap: 2rem;
+}
 .health_and_safety_section{
     background: rgb(247, 193, 184);
     padding-top: 4.8rem;}

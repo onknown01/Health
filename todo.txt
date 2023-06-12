@@ -1,7 +1,7 @@
 - work on resources responsiveness and look
-- adjust hero section (home page) on different viewports
-- adjust hero section (other pages) on different viewports
-- make hero caption responsive (home and other pages)
+- adjust hero section (home page) on different viewports (✔)
+- adjust hero section (other pages) on different viewports (✔)
+- make hero caption responsive (home and other pages) (✔)
 - work on text hirachy and white spacing (home, about and resurces)
 - cross check for extra refactoring and fix potiential bugs
 - push changes
