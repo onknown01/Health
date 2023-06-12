@@ -17,7 +17,6 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
     font-size: 62.5%;}
 @media (max-width: 400px) {
     html{
@@ -25,7 +24,6 @@ html{
 
 body{
     font-family: 'Axiforma', sans-serif;
-    overflow-x: hidden;
     box-sizing: border-box;
     line-height: 1.5;
     font-size: 1.6rem;
@@ -45,6 +43,7 @@ button{
 
 /* utilities */
 .contain{
+    overflow-x: hidden;
     padding: 0 6rem;}
 @media (max-width: 750px){
     .contain{
@@ -161,9 +160,7 @@ button{
 
 .help_display{
     background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 1.7rem 0;}
 @media (max-width: 520px){
     .help_display{
@@ -273,7 +270,7 @@ button{
     margin-top: 1.92rem;}
 
 .hero_main_content{
-    width: 40vw;
+    width: 40%;
     position: absolute;
     transform: translate(0%, -50%);
     top: 50%;
@@ -361,7 +358,7 @@ button{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: auto;}
+    margin: 0 auto 4rem;}
 @media (max-width: 1070px){
     .service_text_wrapper{
         width: 80%;}}
@@ -379,39 +376,44 @@ button{
     margin-bottom: 1rem;
     text-align: center;}
 
-.service_cards_wrapper{
+.service_cards_wrapper, .project_cards_wrapper{
     display: flex;
-    justify-content: space-around;
     align-items: flex-start;
-    gap: 2rem;
-    padding: 4.8rem 0 0;
-    width: 85%;
-    margin: auto;}
-@media (max-width: 1070px){
-    .service_cards_wrapper{
-        width: 85%;}}
-@media (max-width: 850px){
-    .service_cards_wrapper{
-        display: block;
-        width: 85%;
-    }}
-
-.service_card{
-    width: 100%;
-    border-radius: 1rem;
+    justify-content: center;
     overflow-x: scroll;
-    box-shadow: 0 0 1.5rem .5rem #00000018;
-    background: white;}
-@media (max-width: 870px){
-    .service_card:last-child{
-        display: none;}}
-@media (max-width: 850px){
-    .service_card{
-        margin-bottom: 2rem;
-    }}
-@media (max-width: 600px){
-    .service_card:last-child{
+    gap: 2rem;
+    margin: auto;}
+@media (max-width: 990px){
+    .service_cards_wrapper, .project_cards_wrapper{
+        width: 80%;
+        justify-content: flex-start;}}
+@media (max-width: 800px){
+    .service_cards_wrapper, .project_cards_wrapper{
+        width: 100%;}}
+@media (max-width: 520px){
+    .service_cards_wrapper, .project_cards_wrapper{
         display: block;}}
+
+.service_cards_wrapper::-webkit-scrollbar, .project_cards_wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.service_card, .project_card{
+    min-width: 30rem;
+    max-width: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem .5rem #00000018;
+    overflow: hidden;
+    background: white;}
+@media (max-width: 520px){
+    .service_card, .project_card{
+        max-width: unset;
+        min-width: unset;
+        width: 75%;
+        margin: 0 auto 3rem;}}
+@media (max-width: 520px){
+    .service_card, .project_card{
+        width: 100%;}}
 
 .service_card_img_wrapper{
     width: 100%;
@@ -433,7 +435,7 @@ button{
 }
 
 .service_cardBody{
-    padding: 2rem;
+    padding: 0 2rem 2rem;
 }
 
 .service_card_text{
@@ -462,30 +464,23 @@ button{
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
+    text-align: center;
     padding: 6rem 0;}
 .why_us_section_content_wrapper{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .8rem;
-    font-size: 1.76rem;
     color: white;}
 @media (max-width: 380px){
     .why_us_section_content_wrapper small{
         text-align: center;}}
 
 .why_us_header{
-    font-size: 3.2rem;
-    margin-bottom: .8rem;}
+    font-size: 3.2rem;}
 
 .why_us_text{
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 1.92rem;
-    font-weight: 200;
+    padding: 2rem 0;
+    margin: 0 auto;
     width: 65%;}
 @media (max-width: 1070px){
     .why_us_text{
@@ -497,19 +492,7 @@ button{
 
 /* project section */
 .project_section{
-    background: var(--service-bg);
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 8rem 0;}
-@media (max-width: 1070px){
-    .project_section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;}}
-@media (max-width: 850px){
-    .project_section .contain{
-        padding: 0;}}
+    padding: 5rem 0;}
 
 .peoject_action{
     margin-bottom: 3rem;
@@ -518,39 +501,20 @@ button{
     text-align: center;}
 .project_section_header{
     font-size: 2.5rem;
+    margin: 0 0 2.5rem;
     color: var(--primary);}
 @media (max-width: 380px){
     .project_section_header{
         text-align: center;
         font-size: 2.4rem;}}
 
-.project_cards_wrapper{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    gap: 2rem;}
-
-@media (max-width: 850px){
-    .project_cards_wrapper{
-        display: block;
-        width: 85%;
-    }}
-
 .project_card{
     border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0px 0px 1.5rem 0.5rem #27272721;
 }
-@media (max-width: 850px){
-    .project_card{
-        margin-bottom: 2rem;
-    }
-    .project_card:last-child{
-        display: none;}}
 
 .project_card_img_wrapper{
     width: 100%;
-    height: 35vh;}
+    height: 20vh;}
 .project_card_img{
     width: 100%;
     height: 100%;
@@ -570,18 +534,12 @@ button{
 
 /* team_section */
 .team_section{
-    padding: 5rem 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;}
+    padding: 5rem 0 0;}
 .news_letter_content_wrapper{
     align-items: center;}
 .team_section_content_wrapper{
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;}
+    margin: 0 auto 0;
+    width: 80%;}
 @media (max-width: 380px){
     .news_letter_content_wrapper{
         padding: 1.6rem;}}
@@ -613,13 +571,14 @@ button{
     width: 100%;
     padding: 4.8rem 0;
     display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
     justify-content: center;
     align-items: flex-end;}
-@media (max-width: 520px){
-    .team_members_image_wrapper{
-        flex-direction: column;
-        align-items: center;
-        gap: 1.6rem;}}
+
+.team_members_image_wrapper::-webkit-scrollbar{
+    display: none;
+}
 
 .team_img{
     width: 19.2rem;
@@ -628,11 +587,6 @@ button{
     .team_img {
         width: 17.6rem;
         height: 11.2rem;}}
-@media (max-width: 840px){
-    .team_img:first-child{
-        display: none;}
-    .team_img:last-child{
-        display: none;}}
         
 .learge_team_img{
     width: 24rem;
@@ -645,14 +599,10 @@ button{
 
 /* review section */
 .review_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 7rem 0;
     background: var(--service-bg);}
-
 .review_section_header{
+    text-align: center;
     font-size: 3.2rem;
     margin-bottom: 3.2rem;}
 @media (max-width: 380px){
@@ -660,7 +610,8 @@ button{
         font-size: 2.4rem;}}
 
 .review_cards_wrapper{
-    width: 80vw;
+    width: 80%;
+    margin: 0 auto 0;
     display: flex;
     justify-content: space-around;
     gap: 3.2rem;
@@ -700,20 +651,16 @@ button{
 .review_card:hover{
     transform: translateY(-5rem);
     box-shadow: 0 0 1rem .7rem #aaaaaa2a;
-}
+    background: var(--primary);
+    color: white;}
+@media (max-width: 870px){
+    .brand_review_card{
+        margin-top: 0;}}
 .review_user_img{
     width: 6.4rem;
     height: 6.4rem;
     border-radius: 50%;
     object-fit: cover;}
-
-.brand_review_card{
-    background: var(--primary);
-    color: white;
-    align-self: flex-start;}
-@media (max-width: 870px){
-    .brand_review_card{
-        margin-top: 0;}}
 
 
 /* news_letter_section */
@@ -721,14 +668,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6.4rem 0;}
+    padding: 5rem 0;}
 
 .news_letter_content_wrapper{
     background-image: url(../Images/CTA\ BG.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    width: 85vw;
+    width: 85%;
     padding: 6rem 5rem;
     height: auto;
     border-radius: 1.6rem;
@@ -872,7 +819,7 @@ button{
 /* [ABOUT PAGE] */
 .about_hero_section{
     width: 100%;
-    height: 75vh;
+    height: 60vh;
     background-image: url(../Images/about\ hero.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -892,17 +839,13 @@ button{
 
 /* intro_section */
 .intro_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 6.4rem  0;}
 @media (max-width: 450px){
     .intro_section{
         padding-top: 3.2rem;}}
 .intro_content_wrappper{
-    display: flex;
-    gap: 3.2rem;
-    width: 70vw;}
+    margin: 0 auto 0;
+    width: 70%;}
 @media (max-width: 1070px){
     .intro_content_wrappper{
         width: 85vw;}}
@@ -928,7 +871,7 @@ button{
         width: 90vw;}}
 
 .intro_img_wrapper{
-    width: 35vw;
+    width: 35%;
     height: 60vh;}
 @media (max-width: 1070px){
     .intro_img_wrapper{
@@ -939,7 +882,7 @@ button{
 @media (max-width: 870px){
     .intro_img_wrapper{
         width: 100%;
-        height: 70vh;}}
+        height: 50rem;}}
 @media (max-width: 780px){
     .intro_img_wrapper{
         height: 60vh;}}
@@ -1014,12 +957,9 @@ button{
 
 /* about_team_section */
 .about_team_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem 0;}
+    padding: 4rem 0;}
 .about_team_header{
+    text-align: center;
     font-size: 3.2rem;
     margin-bottom: 1.6rem;
     color: var(--primary);}
@@ -1029,10 +969,12 @@ button{
 
 .about_team_card{
     display: flex;
-    width: 65vw;
+    align-items: flex-start;
+    width: 70%;
     gap: 3.2rem;
-    border-radius: 1.6rem;
-    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.075);
+    margin: 0 auto 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.4rem .6rem #33333318;
     margin-top: 4.8rem;}
 @media (max-width: 1070px){
     .about_team_card{
@@ -1088,22 +1030,28 @@ button{
 @media (max-width: 1070px){
     .about_team_member_card_wrapper{
         width: 80vw;
+        margin: 0 auto 0;
         column-gap: 1.6rem;}}
 @media (max-width: 980px){
     .about_team_member_card_wrapper{
+        margin: 0 auto 0;
         width: 85vw;}}
 @media (max-width: 870px){
     .about_team_member_card_wrapper{
+        margin: 0 auto 0;
         width: 88vw;}}
 @media (max-width: 580px){
     .about_team_member_card_wrapper{
+        margin: 0 auto 0;
         grid-template-columns: repeat(1, 1fr);
         width: 70vw;}}
 @media (max-width: 540px){
     .about_team_member_card_wrapper{
+        margin: 0 auto 0;
         width: 80vw;}}
 @media (max-width: 500px){
     .about_team_member_card_wrapper{
+        margin: 0 auto 0;
         width: 85vw;}}
 
 .about_team_img_content_box{
@@ -1142,11 +1090,11 @@ button{
     padding-bottom: 0.48rem;}
 
 .about_team_member_card_wrapper{
-    width: 75vw;
+    width: 75%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin: 5rem 0;}
+    margin: 5rem auto;}
 @media (max-width: 780px){
     .about_team_member_card_wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -1171,22 +1119,8 @@ button{
     object-fit: cover;}
 
 .relationship_text_wrapper{
-    width: 60vw;}
-@media (max-width: 1070px){
-    .relationship_text_wrapper{
-        width: 70vw;}}
-@media (max-width: 980px){
-    .relationship_text_wrapper{
-        width: 75vw;}}
-@media (max-width: 680px){
-    .relationship_text_wrapper{
-        width: 80vw;}}
-@media (max-width: 580px){
-    .relationship_text_wrapper{
-        width: 85vw;}}
-@media (max-width: 450px){
-    .relationship_text_wrapper{
-        width: 90vw;}}
+    margin: 0 auto;
+    width: 70%;}
 
 
 .relationship_text{
@@ -1195,10 +1129,8 @@ button{
     .relationship_text{
         font-size: 1.6rem;}}
 .accreditation_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;}
+    padding: 3rem 0;
+    text-align: center;}
 
 .accredition_header{
     font-size: 3.2rem;
@@ -1211,6 +1143,7 @@ button{
     display: flex;
     justify-content: space-around;
     width: 55vw;
+    margin: 0 auto;
     align-items: center;
     max-width: 95vw;}
 @media (max-width: 1070px){
@@ -1288,8 +1221,7 @@ button{
     align-items: center;
     width: 75vw;
     gap: 3.2rem;
-    font-size: 1.76rem;
-    margin: 6.4rem 0;}
+    margin: 6.4rem auto;}
 @media (max-width: 1100px){
     .housing_content_wrapper{
         width: 85vw;}}
@@ -1307,29 +1239,9 @@ button{
     .housing_content_wrapper{
         width: 90vw;}}
 
-.service_content_wrapper{
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    font-size: 1.76rem;
-    margin: 6.4rem 0;
-    margin-top: 3.2rem;}
-@media (max-width: 1100px){
-    .service_content_wrapper{
-        width: 85vw;}}
-@media (max-width: 1000px){
-    .service_content_wrapper{
-        width: 90vw;}}
-@media (max-width: 940px){
-    .service_content_wrapper{
-        flex-direction: column;
-        width: 70vw;}}
-@media (max-width: 660px){
-    .service_content_wrapper{
-        width: 80vw;}}
-@media (max-width: 540px){
-    .service_content_wrapper{
-        width: 90vw;}}
+.service_content_wrapper, .project_cards_wrapper{
+    margin: 0 auto 3rem;
+}
 
 .service_image_area{
     flex: 1;
