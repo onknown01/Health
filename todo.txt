@@ -1,2 +1,4 @@
-- inspect resonsiveness for about and hompe page and make neccessary corrections
-- add more stuffs that needs corrections
+- rename classes and make sure everything still works elegantly
+- chekout toggle if it still works
+- make home, about and services elegant perfect and elegant
+- handle contact us later

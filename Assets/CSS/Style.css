@@ -840,12 +840,14 @@ button{
 
 /* intro_section */
 .intro_section{
-    padding: 6.4rem  0;}
+    padding: 6.4rem 0 3rem;}
 @media (max-width: 450px){
     .intro_section{
         padding-top: 3.2rem;}}
 .intro_content_wrappper{
     margin: 0 auto 0;
+    display: flex;
+    gap: 2rem;
     width: 70%;}
 @media (max-width: 1070px){
     .intro_content_wrappper{
@@ -872,10 +874,11 @@ button{
         width: 90vw;}}
 
 .intro_img_wrapper{
-    width: 35%;
-    height: 60vh;}
+    width: 40%;
+    height: 40rem;}
 @media (max-width: 1070px){
     .intro_img_wrapper{
+        margin: 0 0 2rem;
         width: 40vw;}}
 @media (max-width: 980px){
     .intro_img_wrapper{
@@ -896,8 +899,7 @@ button{
 
 .intro_img{
     width: 100%;
-    height: 100%;
-    border-radius: 3.2rem;}
+    height: 100%;}
 .intro_text_contnet_div{
     flex: 1;
     padding: 0 0 2.4rem;}
