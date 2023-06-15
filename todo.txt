@@ -1,9 +1,9 @@
-- white spacing
-- font control (font size control)
-- responsiveness (home, about, resources)
-- implement contaner class, control spacing on both sides of the page
-- download neccesary images 
-- input neccessary contents to pages for word document
-- handle accrediatation section elegantly
-- push to main branch
-- reachout to client
+- white spacing 3
+- font control (font size control) 2
+- responsiveness (home, about, resources) 1
+- implement contaner class, control spacing on both sides of the page 4
+- download neccesary images 88
+- input neccessary contents to pages for word document 5
+- handle accrediatation section elegantly 6
+- push to main branch 7, 9
+- reachout to client 10
