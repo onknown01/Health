@@ -351,8 +351,8 @@ button{
 .service_cards_wrapper, .project_cards_wrapper{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1.5rem;
     margin: auto;}
 @media (max-width: 990px){
     .service_cards_wrapper, .project_cards_wrapper{
@@ -370,8 +370,7 @@ button{
 }
 
 .service_card, .project_card{
-    min-width: 30rem;
-    max-width: 30rem;
+    flex: 1;
     border-radius: 1rem;
     box-shadow: 0 0 1.2rem .3rem #00000018;
     overflow: hidden;
