@@ -28,7 +28,7 @@ body{
     line-height: 1.5;
     font-size: 1.6rem;
     font-weight: 300;
-    color: #4d4d4d;}
+    color: #1a1a1a;}
 
 button, link, input, textarea{
     font-family: inherit;}
@@ -42,7 +42,6 @@ button{
 
 /* utilities */
 .contain{
-    overflow-x: hidden;
     padding: 0 6rem;}
 @media (max-width: 750px){
     .contain{
@@ -265,9 +264,9 @@ button{
     margin-top: 1.92rem;}
 
 .hero_main_content{
-    width: 40%;
+    width: 45%;
     position: absolute;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -30%);
     top: 50%;
     left: 6%;}
 @media (max-width: 1200px) {
@@ -290,10 +289,9 @@ button{
         padding-top: 0;}}
 
 .hero_header{
-    font-size: 3.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: .8rem;}
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-transform: uppercase;}
 .hero_text{
     margin: 0 0 1rem;
     font-size: 2rem;}
@@ -320,7 +318,7 @@ button{
     align-items: center;}
 .services_section_header{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;}
 @media (max-width: 750px){
     .services_section_header{
@@ -354,7 +352,6 @@ button{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    overflow-x: scroll;
     gap: 2rem;
     margin: auto;}
 @media (max-width: 990px){
@@ -376,7 +373,7 @@ button{
     min-width: 30rem;
     max-width: 30rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1.5rem .5rem #00000018;
+    box-shadow: 0 0 1.2rem .3rem #00000018;
     overflow: hidden;
     background: white;}
 @media (max-width: 520px){
@@ -435,7 +432,7 @@ button{
     background-repeat: no-repeat;
     height: auto;
     text-align: center;
-    padding: 6rem 0;}
+    padding: 7rem 0;}
 .why_us_section_content_wrapper{
     width: 100%;
     height: 100%;
@@ -445,12 +442,12 @@ button{
         text-align: center;}}
 
 .why_us_header{
-    font-size: 2.5rem;}
+    font-size: 3rem;}
 .why_us_text{
     text-align: center;
     font-size: 1.4rem;
     padding: 2rem 0;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     width: 65%;}
 @media (max-width: 1070px){
     .why_us_text{
@@ -523,7 +520,8 @@ button{
         width: 80%;}}
 
 .team_section_header{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #000;
     text-align: center;
     margin-bottom: .8rem;}
 .team_section_text{
@@ -568,6 +566,7 @@ button{
     padding: 7rem 0;
     background: var(--service-bg);}
 .review_section_header{
+    color: #000;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3.2rem;}
@@ -667,6 +666,7 @@ button{
         width: 98%;}}
 
 .newsletter_header{
+    margin: 0 0 2rem;
     font-size: 2.5rem;}
 @media (max-width: 840px){
     .newsletter_header{
@@ -802,12 +802,12 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(50%);
+    transform: translateY(20%);
     padding: 3rem 0;}
 
 /* intro_section */
 .intro_section{
-    padding: 6.4rem 0 3rem;}
+    padding: 6.4rem 0;}
 @media (max-width: 450px){
     .intro_section{
         padding-top: 3.2rem;}}
@@ -858,6 +858,7 @@ button{
 
 /* mission_section */
 .mission_section{
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -897,7 +898,7 @@ button{
 .mission_card{
     text-align: center;}
 .mission_header{
-    font-size: 2.24rem;
+    font-size: 2.4rem;
     margin-bottom: .8rem;
     color: var(--primary);}
 
@@ -1016,7 +1017,7 @@ button{
     padding: 3rem 0;
     text-align: center;}
 .accredition_header{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--primary);}
 @media (max-width: 450px){
     .accredition_header{
@@ -1040,13 +1041,10 @@ button{
 /* [RESOURCES PAGE] */
 .service_intro_section{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    padding: 3.2rem 0;
-    padding-top: 8rem;
-    display: grid;
-    grid-template-columns: 25fr 75fr;
-    gap: 1.6rem;}
+    padding: 8rem 0;
+    gap: 1rem;}
 @media (max-width: 1000px){
     .service_intro_section{
         display: flex;
@@ -1057,7 +1055,7 @@ button{
 
 .service_intro_header{
     color: var(--primary);
-    font-size: 3.2rem;}
+    font-size: 3rem;}
 .service_intro_text_warapper{
     width: 80%;}
 @media (max-width: 1000px){
@@ -1068,30 +1066,26 @@ button{
         width: 95vw;}}
 
 .service_intro_text_warapper p{
-    font-size: 2.24rem;
-    line-height: 1.7;
-    font-weight: 600;}
+    font-size: 1.8rem;}
 @media (max-width: 540px){
     .service_intro_text_warapper p{
         font-size: 1.92rem;}}
 
 /* services */
 .service_section{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;}
+    background: #F7FFEC;
+    padding: 5rem 0;}
 .service_content_wrapper{
     display: flex;
     gap: 2rem;
 }
 .health_and_safety_section{
-    background: rgb(247, 193, 184);
-    padding-top: 4.8rem;}
+    background: #FFEBE5;
+    padding: 5rem 0;}
 
 .service_header{
     padding: 1.6rem 0;
-    font-size: 3.52rem;}
+    font-size: 3rem;}
 @media (max-width: 540px){
     .services_header{
         font-size: 2.4rem;}}
@@ -1106,9 +1100,9 @@ button{
 .housing_content_wrapper{
     display: flex;
     align-items: center;
-    width: 75vw;
-    gap: 3.2rem;
-    margin: 6.4rem auto;}
+    width: 80%;
+    gap: 3rem;
+    margin: 0 auto;}
 @media (max-width: 1100px){
     .housing_content_wrapper{
         width: 85vw;}}
@@ -1127,18 +1121,23 @@ button{
         width: 90vw;}}
 
 .service_content_wrapper, .project_cards_wrapper{
-    margin: 0 auto 3rem;
+    margin: 0 auto;
+    width: 80%;
 }
-.service_image_area{
+.service_image_area, .housing_image_area, .health_image_area, .workers_image_area{
     flex: 1;
-    width: 40vw;
-    height: 72vh;
-    background-image: url(../Images/service\ banner.png);
+    height: 65vh;
+    position: relative;
     border-radius: 0.64rem;}
 @media (max-width: 940px){
     .service_image_area{
         width: 100%;
         border-radius: 1.6rem;}}
+
+.service_image_area img, .housing_image_area img, .health_image_area img, .workers_image_area img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;}
 
 .housing_image_content_wrapper{
     display: flex;
@@ -1165,11 +1164,13 @@ button{
 
 .service_img_text_box{
     background-color: var(--primary);
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
     width: 65%;
     padding: 1.1rem;
-    margin: 3.2rem;
-    border-radius: 2rem;
-    line-height: 1.5;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     color: white;}
 @media (max-width: 540px){
     .service_img_text_box{
@@ -1179,45 +1180,6 @@ button{
 .health_img_text_box{
     background: tomato;
     color: white;}
-.housing_image_area{
-    flex: 1;
-    width: 40vw;
-    height: 72vh;
-    background-image: url(../Images/housing\ banner.png);
-    border-radius: 0.64rem;}
-@media (max-width: 660px){
-    .housing_image_area{
-        width: 80vw;}}
-@media (max-width: 540px){
-    .housing_image_area{
-        width: 90vw;}}
-
-.health_image_area{
-    flex: 1;
-    width: 40vw;
-    height: 72vh;
-    background-image: url(../Images/health\ and\ safety\ banner.png);
-    border-radius: 0.64rem;}
-@media (max-width: 660px){
-    .health_image_area{
-        width: 80vw;}}
-@media (max-width: 540px){
-    .health_image_area{
-        width: 90vw;}}
-
-.workers_image_area{
-    flex: 1;
-    width: 40vw;
-    height: 72vh;
-    background-image: url(../Images/expertrate.png);
-    border-radius: 0.64rem;
-    background-size: cover;}
-@media (max-width: 660px){
-    .workers_image_area{
-        width: 80vw;}}
-@media (max-width: 540px){
-    .workers_image_area{
-        width: 90vw;}}
 
 .service_image_content_wrapper{
     width: 100%;
@@ -1229,6 +1191,7 @@ button{
 
 .service_text_content_area{
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 1.92rem;
     width: 38vw;}
@@ -1237,9 +1200,8 @@ button{
         width: 100%;}}
 
 .health_tect_content_area{
+    flex: 1;
     padding-right: 3.2rem;}
-.services_header{
-    font-size: 3.2rem;}
 .resources_service_text, .housing_text{
     line-height: 1.7;}
 .services_list{
