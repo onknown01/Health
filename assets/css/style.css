@@ -822,6 +822,8 @@ button{
         display: block;}}
 
 .intro_img_wrapper{
+    background: url(../images/team/ceo.jpeg);
+    background-size: cover;
     width: 40%;
     height: 40rem;}
 @media (max-width: 985px){
@@ -853,7 +855,7 @@ button{
 
 /* mission_section */
 .mission_section{
-    height: 45vh;
+    min-height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
