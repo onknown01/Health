@@ -42,7 +42,13 @@ button{
 
 /* utilities */
 .contain{
-    padding: 0 6rem;}
+    padding: 0 12rem;}
+@media (max-width: 1100px){
+    .contain{
+    padding: 0 9rem;}}
+@media (max-width: 940px){
+    .contain{
+    padding: 0 5rem;}}
 @media (max-width: 750px){
     .contain{
     padding: 0 3rem;}}
@@ -326,7 +332,7 @@ button{
     }
 }
 .service_text_wrapper{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,16 +360,6 @@ button{
     justify-content: space-between;
     gap: 1.5rem;
     margin: auto;}
-@media (max-width: 990px){
-    .service_cards_wrapper, .project_cards_wrapper{
-        width: 80%;
-        justify-content: flex-start;}}
-@media (max-width: 800px){
-    .service_cards_wrapper, .project_cards_wrapper{
-        width: 100%;}}
-@media (max-width: 520px){
-    .service_cards_wrapper, .project_cards_wrapper{
-        display: block;}}
 
 .service_cards_wrapper::-webkit-scrollbar, .project_cards_wrapper::-webkit-scrollbar{
     display: none;
@@ -416,7 +412,7 @@ button{
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin: 1rem 0;}
+    margin: 3rem 0;}
 .service_bottom_area a{
     color: var(--primary);}
 @media (max-width: 380px){
@@ -500,9 +496,6 @@ button{
     padding: 5rem 0 0;}
 .news_letter_content_wrapper{
     align-items: center;}
-.team_section_content_wrapper{
-    margin: 0 auto 0;
-    width: 80%;}
 @media (max-width: 380px){
     .news_letter_content_wrapper{
         padding: 1.6rem;}}
@@ -574,8 +567,6 @@ button{
         font-size: 2.4rem;}}
 
 .review_cards_wrapper{
-    width: 80%;
-    margin: 0 auto 0;
     display: flex;
     justify-content: space-around;
     gap: 3.2rem;
@@ -586,7 +577,6 @@ button{
 @media (max-width: 980px){
     .review_cards_wrapper{
         width: 90vw;
-        /* width: 95vw; */
         gap: 1.6rem;}}
 @media (max-width: 870px){
     .review_cards_wrapper{
@@ -813,17 +803,10 @@ button{
 .intro_content_wrappper{
     margin: 0 auto 0;
     display: flex;
-    gap: 2rem;
-    width: 80%;}
-@media (max-width: 985px){
-    .intro_content_wrappper{
-        width: 85%;}}
-@media (max-width: 985px){
+    gap: 2rem;}
+@media (max-width: 785px){
     .intro_content_wrappper{
         display: block;}}
-@media (max-width: 545px){
-    .intro_content_wrappper{
-        width: 100%;}}
 
 .intro_img_wrapper{
     width: 40%;
@@ -975,11 +958,11 @@ button{
 .about_team_text{
     padding-bottom: 0.48rem;}
 .about_team_member_card_wrapper{
-    width: 75%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin: 5rem auto;}
+    margin: 0 auto 5rem;}
 @media (max-width: 780px){
     .about_team_member_card_wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -1003,7 +986,7 @@ button{
     object-fit: cover;}
 .relationship_text_wrapper{
     margin: 0 auto;
-    width: 70%;}
+    width: 80%;}
 
 
 .relationship_text{
@@ -1038,14 +1021,12 @@ button{
 
 
 /* [RESOURCES PAGE] */
-.service_intro_section{
+.service_intro_wrap{
     display: flex;
-    width: 80%;
-    margin: auto;
     padding: 8rem 0;
     gap: 1rem;}
-@media (max-width: 1000px){
-    .service_intro_section{
+@media (max-width: 950px){
+    .service_intro_wrap{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1076,8 +1057,15 @@ button{
     padding: 5rem 0;}
 .service_content_wrapper{
     display: flex;
-    gap: 2rem;
-}
+    gap: 2rem;}
+@media (max-width: 900px){
+    .service_content_wrapper{
+        width: 80%;
+        margin: auto;
+        display: block;}}
+@media (max-width: 650px){
+    .service_content_wrapper{
+        width: 100%;}}
 .health_and_safety_section{
     background: #FFEBE5;
     padding: 5rem 0;}
@@ -1099,44 +1087,31 @@ button{
 .housing_content_wrapper{
     display: flex;
     align-items: center;
-    width: 80%;
     gap: 3rem;
     margin: 0 auto;}
-@media (max-width: 1100px){
+@media (max-width: 900px){
     .housing_content_wrapper{
-        width: 85vw;}}
-@media (max-width: 1000px){
+        width: 80%;
+        flex-direction: column-reverse;}}
+@media (max-width: 650px){
     .housing_content_wrapper{
-        width: 90vw;}}
-@media (max-width: 940px){
-    .housing_content_wrapper{
-        flex-direction: column-reverse;
-        width: 70vw;}}
-@media (max-width: 660px){
-    .housing_content_wrapper{
-        width: 80vw;}}
-@media (max-width: 540px){
-    .housing_content_wrapper{
-        width: 90vw;}}
+        width: 100%;}}
 
-.service_content_wrapper, .project_cards_wrapper{
-    margin: 0 auto;
-    width: 80%;
-}
 .service_image_area, .housing_image_area, .health_image_area, .workers_image_area{
     flex: 1;
     height: 65vh;
     position: relative;
     border-radius: 0.64rem;}
 @media (max-width: 940px){
-    .service_image_area{
-        width: 100%;
+    .service_image_area, .housing_image_area, .health_image_area, .workers_image_area{
+        height: 40rem !important;
         border-radius: 1.6rem;}}
 
 .service_image_area img, .housing_image_area img, .health_image_area img, .workers_image_area img{
     object-fit: cover;
     width: 100%;
     height: 100%;}
+
 
 .housing_image_content_wrapper{
     display: flex;
