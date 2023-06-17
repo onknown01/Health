@@ -298,9 +298,16 @@ button{
     font-size: 3.6rem;
     font-weight: 600;
     text-transform: uppercase;}
+@media (max-width: 630px){
+    .hero_header{
+    font-size: 2rem}}
 .hero_text{
     margin: 0 0 1rem;
     font-size: 2rem;}
+@media (max-width: 630px){
+    .hero_text{
+    margin: 0 0 1rem;
+    font-size: 1.6rem;}}
 
 .hero_btn_wrapper{
     display: flex;
