@@ -191,7 +191,7 @@ button{
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: #141414a9;
+    background: #141414b6;
 }
 @media (max-width: 380px){
     .navbar{
