@@ -8,8 +8,7 @@ const closeMobileNav = () => {
   mobileNav.classList.add("hide");
 };
 
-let navbar = document.querySelector(".hero_section .navbar"),
-  navbar2 = document.querySelector("about_hero_section .navbar"),
+let navbar = document.querySelector(".navbar"),
   stick = navbar.getBoundingClientRect().top;
 console.log(stick);
 
