@@ -58,9 +58,6 @@ button{
 @media (max-width: 750px){
     .contain{
     padding: 0 3rem;}}
-@media (max-width: 430px){
-    .contain{
-    padding: 0 1.5rem;}}
     
 .text-primary{
     color: var(--primary);}
@@ -1217,3 +1214,203 @@ button{
     display: flex;
     align-items: center;
     gap: 1rem;}
+
+
+/* [CONTACT PAGE] */
+
+.contact_form_section{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form_wrapper{
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    gap: 2rem;
+    width: 85vw;
+}
+.company_details_box{
+    width: 100%;
+}
+.company_details_header{
+    font-size: 2.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.company_details_box h3{
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 0.8rem 0;
+    color: var(--primary);
+}
+
+.company_details_box p{
+    font-size: 1.4rem;
+    width: 30%;
+    line-height: 1.8;
+    font-weight: 600;
+}
+.aim_text{
+    font-size: 1.5rem !important;
+    width: 90% !important;
+    margin-top: 1rem;
+    line-height: 1.8 !important;
+}
+
+
+.contact_form_top_text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+.form_group_box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    margin-bottom: 0.7rem;
+}
+.form_group_box label{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.fullname_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.form_input{
+    padding: 0.6rem 0.5rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    border-radius: 0.3rem;
+    border: 1px solid #dfdfdf;
+    outline: none;
+}
+.form_textarea{
+    font-family: inherit;
+    border-radius: 0.3rem;
+    border: 1px solid #dfdfdf;
+    height: 7rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.5rem;
+    outline: none;
+    resize: none;
+}
+.privacy_policy_text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.5rem 0.1rem;
+    color: rgba(0, 0, 0, 0.76);
+}
+.send_message{
+    width: 100%;
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
+    border: none;
+    background: var(--primary);
+    color: white;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    margin: 1rem 0;
+}
+
+
+
+.map_display_section{
+    width: 100%;
+    min-height: 65vh;
+}
+
+
+
+@media (max-width: 1070px) {
+    .contact_form_wrapper{
+        width: 90vw;
+    }
+    .contact_form_wrapper{
+        grid-template-columns: 70fr 30fr;
+    }
+    .aim_text{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .contact_form_wrapper{
+        width: 95vw;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .contact_form_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        width: 70vw;
+    }
+    .company_details_box h3{
+        width: 100%;
+    }
+    .contact_form{
+        width: 100%;
+    }
+    .form_input {
+        width: 100%;
+    }
+    .map_display_section{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact_form_wrapper{
+        width: 80vw;
+    }
+    .company_details_box p{
+        width: 40%;
+    }
+    .map_display_section {
+        height: 50vh;
+        margin: 2.5rem 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact_form_wrapper{
+        width: 85vw;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact_form_wrapper{
+        width: 90vw;
+    }
+    .company_details_header{
+        font-size: 2rem;
+    }
+    .company_details_box h3{
+        font-size: 1.6rem;
+    }
+    .company_details_box p{
+        font-size: 1.2rem;
+    }
+    .aim_text{
+        font-size: 1.2rem !important;
+    }
+    .contact_form_top_text{
+        font-size: 1.2rem ;
+    }
+    .form_group_box label{
+        font-size: 1.2rem;
+    }
+    .privacy_policy_text{
+        font-size: 1rem;
+    }
+    .map_display_section{
+        height: 45vh;
+    }
+}
