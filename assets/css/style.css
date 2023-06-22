@@ -380,7 +380,7 @@ button{
     .service_cards_wrapper, .project_cards_wrapper{
     justify-content: center;
     gap: 2.5rem;
-    width: 100%;}}
+    width: 85%;}}
 
 .service_cards_wrapper::-webkit-scrollbar, .project_cards_wrapper::-webkit-scrollbar{
     display: none;
